@@ -1,0 +1,14 @@
+<ng-container >
+        <div class="card-table">
+            <div class="card-product" *ngFor="let product of products;  let i=index">
+               <div>{{product.title}}</div>
+               <button (click)="removeItem(product)" class="btn btn-primary">Remove</button>
+            </div>
+
+            <button class="btn btn-danger" (click)="removeAllItem()">
+                    Remove All
+            </button>
+
+        </div>
+</ng-container>
+
